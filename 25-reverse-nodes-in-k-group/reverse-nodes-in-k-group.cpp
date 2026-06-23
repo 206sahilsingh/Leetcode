@@ -16,18 +16,18 @@ public:
         head = first; 
 
         while(first->next){
-            int x=k;
             ListNode* temp = first;
             for(int i =0;i<k;i++){
                 temp =temp->next;
                 if(temp ==NULL)
                     return head->next;
             }
+            int x=k;
             ListNode* second=first->next;
             ListNode* prev =first;
             ListNode* curr=first->next;
             ListNode* front;
-            while(x && curr){
+            while(x){
                 front=curr->next;
                 curr->next =prev;
                 prev=curr;

@@ -19,15 +19,15 @@ public:
             st.push(i);
         }
         while(!st.empty()){
-                index=st.top();
-                st.pop();
-                if(!st.empty()){
-                    ans=max(ans,heights[index]*(n-st.top()-1));
-                }
-                else{
-                    ans=max(ans,heights[index]*n);
-                }
+            index=st.top();
+            st.pop();
+            if(!st.empty()){
+                ans=max(ans,heights[index]*(n-st.top()-1));
             }
+            else{
+                ans=max(ans,heights[index]*n);
+            }
+        }
             return ans;
     }
 };

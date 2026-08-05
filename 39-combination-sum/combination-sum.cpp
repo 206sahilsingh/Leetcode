@@ -1,6 +1,6 @@
 class Solution {
 public:
-    void Sum(int index,vector<int>candidates,int target,vector<vector<int>>& ans, vector<int>& curr){
+    void Sum(int index,vector<int>&candidates,int target,vector<vector<int>>& ans, vector<int>& curr){
         if(target ==0){
         ans.push_back(curr);    
         return;}

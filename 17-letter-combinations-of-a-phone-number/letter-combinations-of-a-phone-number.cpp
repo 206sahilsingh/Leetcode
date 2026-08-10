@@ -34,16 +34,6 @@ public:
         if(digits.empty()){
             return ans;
         }
-        unordered_map<char,string>mp;
-
-        mp['2']="abc";
-        mp['3']="def";
-        mp['4']="ghi";
-        mp['5']="jkl";
-        mp['6']="mno";
-        mp['7']="pqrs";
-        mp['8']="tuv";
-        mp['9']="wxyz";
 
        string curr="";
        solve(0,digits,curr,ans);

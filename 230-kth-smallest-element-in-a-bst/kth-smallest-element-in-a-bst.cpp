@@ -21,6 +21,8 @@ public:
             ans=root->val;
             return;
         }
+        if(k<0)
+            return;
         sum(root->right,k,ans);
     }
 
